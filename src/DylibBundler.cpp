@@ -176,6 +176,7 @@ void doneWithDeps_go()
 {
     std::cout << std::endl;
     const int dep_amount = deps.size();
+    std::cout<<"dep_amount: " << dep_amount << std::endl;
     // print info to user
     for(int n=0; n<dep_amount; n++)
     {
