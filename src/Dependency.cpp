@@ -139,7 +139,7 @@ Dependency::Dependency(std::string path)
     {
         std::cerr << "\n/!\\ WARNING : Library " << filename << " has an incomplete name (location unknown)" << std::endl;
         missing_prefixes = true;
-        
+        /*
         while (true)
         {
             std::cout << "Please specify now where this library can be found (or write 'quit' to abort): ";  fflush(stdout);
@@ -165,6 +165,7 @@ Dependency::Dependency(std::string path)
                 break;
             }
         }
+        */
     }
     
     //new_name  = filename.substr(0, filename.find(".")) + ".dylib";
