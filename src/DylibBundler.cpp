@@ -58,6 +58,8 @@ void addDependency(std::string path)
     if(!Settings::isPrefixBundled(dep.getPrefix())) return;
     
     deps.push_back(dep);
+    std::cout<<"Added dependency: "<<std::endl;
+    deps[deps.size()-1].print();
 }
 
 /*
