@@ -35,7 +35,7 @@ std::vector<Dependency> deps;
 
 void changeLibPathsOnFile(std::string file_to_fix)
 {
-    std::cout << "\n* Fixing dependencies on " << file_to_fix.c_str() << std::endl;
+    std::cerr << "\n* Fixing dependencies on " << file_to_fix.c_str() << std::endl;
     
     const int dep_amount = deps.size();
     for(int n=0; n<dep_amount; n++)
